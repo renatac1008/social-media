@@ -1,0 +1,160 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav {
+  display: flex; 
+  background: linear-gradient(to right, rgb(255, 190, 202), rgb(230, 210, 170),  rgb(162, 213, 231))
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.container {
+  align-self: center;
+}
+
+#data-panel {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.wrapper {
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px gray;
+  margin: 20px;
+  padding: 0px;
+  width: 25%;
+  max-width: 230px;
+  min-width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+}
+.file-img {
+  background: red;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0px;
+  width:100%;
+}
+
+.file-content {
+  background: linear-gradient(135deg,#ffffff, #e0e0e0);
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  padding: 15px;
+  overflow: hidden;
+  
+}
+
+.avatar {
+  transition: transform 0.5s ease-out;
+  
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
+
+.female-color {
+  background: rgb(255, 202, 202);
+  height: 15px;
+  width: 100%;
+}
+
+.male-color {
+  background: rgb(172, 213, 231);
+  height: 15px;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.age, .region {
+  color: gray;
+  font-size: 0.9em;
+  width: 100%;
+  text-align: center;
+}
+
+i.female {
+  color: rgb(255, 129, 129);
+}
+
+i.male {
+  color: rgb(103, 196, 219);
+}
+
+.modal-header {
+  background: rgb(226, 226, 226);
+}
+
+li {
+  list-style-type: none;
+  font-size: 13pt;
+  color: grey;
+}
+
+ul {
+  padding-left: 15px;
+  
+}
+
+.modal-body {
+  display: flex;
+}
+
+#modal-img {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-name {
+  font-size: 1.4em;
+  border-bottom: solid lightgrey 1.5px;
+  font-weight: 800;
+  color: rgb(43, 43, 43);
+}
+
+i {
+  color: rgb(43, 43, 43);
+}
+
+.fa-envelope {
+  font-size: 0.8em;
+}
+
+#modal-avatar {
+  border-radius: 100%;
+  border: solid rgb(241, 241, 241) 10px;
+  width: 90%;
+  transition: transform 0.2s ease-out;
+}
+
+#modal-avatar:hover{
+  transform: scale(1.1);
+}
+
+#updated-at, #created-time {
+  font-size: 10pt;
+
+}

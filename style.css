@@ -85,6 +85,7 @@ body {
 .name {
   font-size: 1.3em;
   margin-bottom: 10px;
+  margin-left: -30px;
 }
 
 .age, .region {
@@ -108,11 +109,9 @@ i.male {
 
 li {
   list-style-type: none;
-  font-size: 13pt;
-  color: grey;
 }
 
-ul {
+.modal-information {
   padding-left: 15px;
   
 }
@@ -156,5 +155,59 @@ i {
 
 #updated-at, #created-time {
   font-size: 10pt;
-
 }
+
+.list-avatar {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.list-avatar:hover {
+  filter: brightness(70%);
+}
+
+.list-name {
+  width: 250px;
+  font-size: 16pt;
+  margin: 0 0 0 80px;
+}
+.list-region {
+  width: 250px;
+}
+
+.fa-heart {
+  color: #e33947;
+}
+
+
+#mode-control {
+  font-size: 20pt;
+}
+
+#search-buttons {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.selected {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #333;
+  color: #eee;
+  font-size: 13pt;  
+}
+.selected:hover {
+  background: #000;
+}
+
+.pagination>li>a {
+  color: grey;
+}
+
+.pagination>li>a:hover {
+  color: #eee;
+  background: #555;
+}
+
+
+

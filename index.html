@@ -21,13 +21,45 @@
     <h1>Fakebook</h1>
   </div>
 
+
+
   <!-- data-panel -->
   <div class="container">
+    <div class="top-row d-flex justify-content-between mt-5">
+      <!-- search bar -->
+      <div class="row m-1" id="search-bar">
+        <form id="search" class="form-inline">
+          <lable class="sr-only" for="inlineFormInputName2">Name</lable>
+          <input type="text" class="form-control mb-2 mr-sm-2" id="search-input" placeholder="serach country ...">
+          <button type="submit" class="btn btn-dark mb-2">Search</button>
+        </form>
+      </div>
+      <!-- search buttons -->
+      <div id="search-buttons">
+        <i class="selected fas fa-home show-all m-1"> Show all </i>
+        <i class="selected fas fa-male m-1"> Male </i>
+        <i class="selected fas fa-female m-1"> Female </i>
+        <i class="show-my-favorite selected fas fa-heart m-1"> My Favorite</i>
+      </div>
+      <!-- card and list icon-->
+      <div id="mode-control">
+        <i class="fa fa-th" id="card-mode" aria-hidden="true"></i>
+        <i class="fa fa-bars" id="list-mode" aria-hidden="true"></i>
+      </div>
+    </div>
+
     <div class="row mt-5" id="data-panel">
       <!-- print profile list here -->
     </div>
   </div>
-
+  <!--Pagination-->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center my-5" id="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+    </ul>
+  </nav>
   <!-- Modal -->
   <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
